@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import Dashboard from "../components/Dashboard/Dashboard";
 import Overview from "../pages/Overview";
 import Tickets from "../pages/Tickets";
 import Ideas from "../pages/Ideas";
@@ -13,7 +12,6 @@ const Routers = () => {
   return (
     <Routes>
       <Route path="/" element={<Navigate to="overview" />} />
-      {/* <Route path="/maindashboard" element={<Dashboard />} /> */}
       <Route path="/overview" element={<Overview />} />
       <Route path="/tickets" element={<Tickets />} />
       <Route path="/ideas" element={<Ideas />} />

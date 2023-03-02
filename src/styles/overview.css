@@ -65,6 +65,7 @@
 
 .tickets h4 {
   font-size: 14px;
+  font-weight: 600;
   color: #252733;
 }
 
@@ -83,23 +84,24 @@
   border-bottom: 2px solid #e5e5e5;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 2rem 0.7rem 2rem;
+  padding: 0rem 2rem 0.6rem 2rem;
 }
 
 .task_status h4:nth-child(1) {
   font-size: 14px;
   color: #9fa2b4;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .radio_check h4 {
   font-size: 14px;
   color: #252733;
+  font-weight: 600;
 }
 
 .task_status p {
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 600;
   color: #ffffff;
   border-radius: 5px;
   padding: 0.3rem 0.6rem;
@@ -115,6 +117,7 @@
   padding: 0.3rem 0.6rem;
   border: none;
   background-color: #f0f1f7;
+  cursor: pointer;
 }
 
 .radio_check {
@@ -186,4 +189,5 @@
 }
 .task_status:nth-child(4) {
   border-bottom: none;
+  padding-bottom: 1rem;
 }

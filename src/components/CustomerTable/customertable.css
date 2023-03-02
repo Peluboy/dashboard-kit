@@ -1,8 +1,6 @@
 .table_container {
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
   background: #ffffff;
-  /* grayscale / divider */
-
   border: 1px solid #dfe0eb;
   border-radius: 8px;
 }
@@ -11,8 +9,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem 2.5rem 2rem;
-  /* padding-bottom: 2.5rem; */
+  padding: 0 2rem 3rem 2rem;
+}
+
+.table-header-title h3 {
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #252733;
 }
 
 .search_filter {
@@ -29,7 +33,6 @@
   position: absolute !important;
   left: -25px;
   top: 15px;
-  /* bottom: 0; */
 }
 
 .MuiOutlinedInput-notchedOutline {
@@ -40,4 +43,85 @@
 
 .PrivateNotchedOutline-legendLabelled-5 {
   display: none !important;
+}
+
+.MuiTableCell-head {
+  color: #9fa2b4 !important;
+  font-weight: 400 !important;
+  padding: 1rem 2rem;
+  padding-left: 2rem !important;
+  line-height: 1.5rem;
+}
+
+.MuiTableCell-body {
+  color: rgba(0, 0, 0, 0.87);
+  padding-left: 2rem !important;
+}
+
+.ticketNameMail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.ticketName {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #252733;
+  font-weight: 500;
+}
+
+.ticketMail {
+  font-size: 13.5px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  font-weight: 400;
+  color: #c5c7cd;
+}
+
+.priorityCell {
+  padding: 0;
+  text-align: center;
+}
+
+.priorityCell.high p {
+  font-weight: 400;
+  background-color: #f44336;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.priorityCell.normal p {
+  font-weight: 400;
+  background-color: #29cc97;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.priorityCell.low p {
+  font-weight: 400;
+  background-color: #fec400;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.priority {
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  color: white;
+}
+
+.MuiTablePagination-toolbar {
+  min-height: 52px;
+  padding-right: 2rem !important;
 }

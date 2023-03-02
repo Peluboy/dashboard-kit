@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import "./customertable.css";
-// import FilterListIcon from "@material-ui/icons/FilterList";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 
 import {
@@ -198,14 +197,13 @@ const rows = [
 
 const CustomerTable = () => {
   const classes = useStyles();
-  // Define a custom style for the ticket details cell
+
   const ticketDetailsStyle = {
     display: "flex",
     verticalAlign: "middle",
-    paddingLeft: "2rem",
+    // paddingLeft: "2rem",
   };
 
-  // Define a custom style for the ticket details image
   const ticketImageStyle = {
     display: "block",
     width: "45px",
@@ -241,14 +239,11 @@ const CustomerTable = () => {
     <div className="table_container">
       <div className="table-header">
         <div className="table-header-title">
-          <h3>All Ticket items</h3>
+          <h3>All Tickets</h3>
         </div>
         <div className="search_filter">
           <div className="table-header-search">
             <TextField
-              InputProps={{
-                disableUnderline: true,
-              }}
               id="outlined-search"
               placeholder="Search..."
               type="search"
@@ -268,9 +263,6 @@ const CustomerTable = () => {
                 <FilterAltIcon />
               </InputLabel>
               <Select
-                inputProps={{
-                  style: { border: "none", outline: "none" },
-                }}
                 value={filterPriority}
                 onChange={handleFilter}
                 label={<FilterAltIcon />}
@@ -284,6 +276,7 @@ const CustomerTable = () => {
           </div>
         </div>
       </div>
+
       <Table className={classes.table}>
         <TableHead>
           <TableRow>
@@ -312,20 +305,28 @@ const CustomerTable = () => {
                   style={ticketDetailsStyle}
                 >
                   <img src={row.img} alt={row.title} style={ticketImageStyle} />
-                  <div>
-                    <h3>{row.title}</h3>
-                    <p>{row.content}</p>
+                  <div className="ticketNameMail">
+                    <h3 className="ticketName">{row.title}</h3>
+                    <p className="ticketMail">{row.content}</p>
+                  </div>
+                </TableCell>
+                <TableCell className="ticketNameMail">
+                  <div className="ticketNameMail">
+                    <h3 className="ticketName">{row.company}</h3>
+                    <p className="ticketMail">{row.location}</p>
                   </div>
                 </TableCell>
                 <TableCell>
-                  <p>{row.company}</p>
-                  <p>{row.location}</p>
+                  <div className="ticketNameMail">
+                    <h3 className="ticketName">{row.date}</h3>
+                    <p className="ticketMail">{row.time}</p>
+                  </div>
                 </TableCell>
-                <TableCell>
-                  <p>{row.date}</p>
-                  <p>{row.time}</p>
+                <TableCell
+                  className={`priorityCell ${row.priority.toLowerCase()}`}
+                >
+                  <p className="priority">{row.priority}</p>
                 </TableCell>
-                <TableCell>{row.priority}</TableCell>
               </TableRow>
             ))}
         </TableBody>
