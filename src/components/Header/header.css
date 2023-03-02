@@ -1,0 +1,345 @@
+.navbar {
+  /* position: absolute; */
+  width: 100%;
+  padding: 20px 0;
+  background: #f7f8fc;
+}
+
+.dashboard_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 3rem;
+  margin-left: 2rem;
+  justify-content: space-between;
+}
+
+.dashboard_header > h3 {
+  font-size: 20px;
+  color: #252733;
+  font-weight: bold;
+}
+
+.noti_profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.notifications {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.noti {
+  position: relative;
+}
+
+.noti_bubble {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  position: absolute;
+  color: white;
+  background-color: #3751ff;
+  top: 0px;
+  right: -2px;
+  /* left: 51px; */
+  border: 3px solid white;
+  font-size: 8px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider {
+  border-left: 1.5px solid #c5c7cd;
+  height: 1rem;
+}
+
+.popover-primary {
+  outline: none !important;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  background-color: transparent;
+  color: #c5c7cd;
+}
+
+.popover-primary > svg:nth-child(1) {
+  position: relative;
+}
+
+.menu_style {
+  position: relative;
+  text-align: left;
+  display: inline-block;
+}
+
+.menu_button {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: transparent;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.profile_pic {
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  border: 2px solid white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.user_name {
+  display: block;
+  font-size: 1rem;
+  color: grey;
+}
+
+.dropdown_icon {
+  height: 0.7rem;
+  width: 0.7rem;
+  color: grey;
+}
+
+.menuItems {
+  position: absolute;
+  right: 0;
+  width: 130px;
+  z-index: 50;
+  margin-top: 2rem;
+  background: white;
+  transform-origin: top right;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 0.25rem;
+}
+
+.menus {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.navlinks {
+  display: flex;
+  font-size: 1rem;
+  color: #414042;
+  justify-content: center;
+  text-decoration: none;
+  gap: 0.7rem;
+}
+
+.to_home {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 2px;
+}
+
+/* .navlinks:hover {
+    background: #f2f6ff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 0.2rem;
+  } */
+
+@media (max-width: 1440px) {
+  /* Your CSS rules for MacBook Air here */
+  .dashboard_header h2 {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .track_order {
+    border: 1.5px solid #e7e7e7;
+    border-radius: 0.3rem;
+    height: 3rem;
+  }
+
+  .track_order input {
+    width: 270px;
+    height: 0;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 10px 20px;
+  }
+
+  .track_order input::placeholder {
+    font-size: 12px;
+    color: #b0b0b0;
+  }
+
+  .track_order button {
+    border: none;
+    padding: 0 1.5rem;
+    border-radius: 0 0.3rem 0.3rem 0;
+    color: white;
+    height: 100%;
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+
+  .tracking {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: 62%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .dashboard_header h2 {
+    width: 30%;
+    /* display: flex;
+    justify-content: flex-end; */
+  }
+
+  .track_order input {
+    width: 270px;
+    height: 0;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 10px 20px;
+  }
+
+  .track_order input::placeholder {
+    font-size: 12px;
+    color: #b0b0b0;
+  }
+
+  .tracking {
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    position: absolute;
+    width: 90%;
+    padding: 10px 0;
+    border-bottom: 2px solid #e7e7e7;
+  }
+
+  .maindash {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .dashboard_header {
+    gap: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .dashboard_header > h2 {
+    font-size: 1.2rem;
+    display: flex;
+    width: 31%;
+    justify-content: flex-start;
+  }
+
+  .track_order {
+    height: 100%;
+  }
+
+  .track_order input {
+    width: 200px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0 20px;
+  }
+
+  .track_order button {
+    padding: 0 1rem;
+    border-radius: 0 0.3rem 0.3rem 0;
+    height: 35px;
+    font-size: 0.7rem;
+  }
+
+  .tracking {
+    gap: 1rem;
+    width: 65%;
+  }
+
+  .tracking > .noti_settings {
+    gap: 0.7rem;
+  }
+
+  .tracking > .noti_settings > img {
+    width: 25%;
+  }
+
+  .logo {
+    width: 10%;
+    /* border-bottom: 2px solid #E7E7E7; */
+  }
+
+  .logo_img > img:nth-child(1) {
+    width: 30%;
+    /* padding-bottom: 1rem; */
+  }
+
+  .logo_img > img:nth-child(2) {
+    display: none;
+  }
+
+  .user_name {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tracking > .noti_settings {
+    gap: 1rem;
+  }
+
+  .dashboard_header {
+    margin-left: 4.3rem;
+  }
+
+  .dashboard_header > h2 {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .navbar {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .tracking {
+    gap: 1rem;
+    width: 50%;
+  }
+
+  .track_order {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .tracking > .noti_settings > img {
+    width: 35%;
+  }
+
+  .user_name {
+    display: none;
+  }
+}

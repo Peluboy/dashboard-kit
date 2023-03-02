@@ -1,0 +1,46 @@
+.card_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardBox {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 258px;
+  height: 134px;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #dfe0eb;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #252733;
+}
+
+.cardBox:hover {
+  border: 2px solid #3751ff;
+  color: #3751ff;
+}
+
+.cardBox > h4,
+.cardBox > h2 {
+  transition: color 0.3s ease-in-out;
+  color: #3751ff;
+}
+
+.cardBox > h4 {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #9fa2b4;
+}
+
+.cardBox > h2 {
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: inherit;
+}

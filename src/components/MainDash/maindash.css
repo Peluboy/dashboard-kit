@@ -1,0 +1,13 @@
+@media screen and (max-width: 1200px) {
+  .maindash {
+    margin-top: 5rem;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .maindash {
+    align-items: center;
+    padding-top: 3rem;
+  }
+}

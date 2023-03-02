@@ -1,0 +1,92 @@
+.charts_container {
+  background: white;
+  display: flex;
+  border: 1px solid #dfe0eb;
+  border-radius: 8px;
+  /* padding: 2rem; */
+  margin-top: 2rem;
+}
+
+.chart {
+  width: 70%;
+  height: 100%;
+  border-right: 2px solid #e5e5e5;
+  padding: 2rem;
+}
+
+.chartHeader {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+
+.chartTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.chartLabels {
+  display: flex;
+  align-items: center;
+}
+
+.chartLabels h4 {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 12px;
+  color: #9fa2b4;
+}
+
+.chartTexts h3 {
+  font-size: 18px;
+  color: #252733;
+}
+
+.chartTexts p {
+  font-size: 11px;
+  color: #9fa2b4;
+}
+
+.linechart {
+  width: 100%;
+}
+
+.chart_data {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.chartsData {
+  border-bottom: 2px solid #e5e5e5;
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  justify-items: center;
+}
+
+.chartsData:nth-child(5) {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.chartsData > h4 {
+  font-size: 15px;
+  color: #9fa2b4;
+}
+
+.chartsData > h2 {
+  font-size: 23px;
+  color: #252733;
+}
