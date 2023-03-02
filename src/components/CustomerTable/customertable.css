@@ -1,0 +1,43 @@
+.table_container {
+  padding: 2rem 0;
+  background: #ffffff;
+  /* grayscale / divider */
+
+  border: 1px solid #dfe0eb;
+  border-radius: 8px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem 2.5rem 2rem;
+  /* padding-bottom: 2.5rem; */
+}
+
+.search_filter {
+  display: flex;
+  gap: 2rem;
+}
+
+.table-header-filter {
+  display: flex;
+}
+
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+  transform: translate(14px, -6px) scale(0.75);
+  position: absolute !important;
+  left: -25px;
+  top: 15px;
+  /* bottom: 0; */
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 0, 0, 0) !important;
+  border-bottom: 1px solid #e0e0e0 !important;
+  border-radius: 0 !important;
+}
+
+.PrivateNotchedOutline-legendLabelled-5 {
+  display: none !important;
+}
