@@ -27,8 +27,15 @@ import Avatar7 from "../../assets/images/avatar-7.png";
 import Avatar8 from "../../assets/images/avatar-8.png";
 
 const useStyles = makeStyles({
-  table: {
-    minWidth: 650,
+  tableContainer: {
+    overflowX: "auto", // enable horizontal scrolling
+    display: "block", // disable table layout
+    "& .MuiTable-root": {
+      minWidth: 650,
+    },
+    "& .MuiTableCell-root": {
+      whiteSpace: "nowrap",
+    },
   },
 });
 

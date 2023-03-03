@@ -31,7 +31,7 @@ const Header = () => {
             </Popover>
           </div>
 
-          <span className="divider"></span>
+          <span className="divider-1"></span>
 
           <Menu as="div" className="menu_style">
             <div>

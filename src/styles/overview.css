@@ -191,3 +191,14 @@
   border-bottom: none;
   padding-bottom: 1rem;
 }
+
+@media screen and (max-width: 768px) {
+  .tickets_task {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .unresolvedTickets {
+    width: 360px;
+  }
+}
