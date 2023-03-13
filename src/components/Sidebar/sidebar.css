@@ -211,8 +211,11 @@
     display: flex;
     padding: 5px;
     position: fixed;
+    width: 2rem;
+    height: 2rem;
     top: 1.8rem !important;
     z-index: 10;
+    border: 1.6px solid #3637405e;
     background: #f7f8fc;
     color: grey;
     font-size: 1.6rem;

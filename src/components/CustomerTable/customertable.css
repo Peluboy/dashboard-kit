@@ -139,6 +139,24 @@
 }
 
 @media screen and (max-width: 768px) {
+  .table_container {
+    background: #fff;
+    border: 1px solid #dfe0eb;
+    border-radius: 8px;
+    padding: 2rem 0 0;
+    overflow-x: scroll;
+    width: 100vw;
+  }
+
+  .table-header {
+    align-items: flex-start;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 2rem;
+    padding: 0 2rem 3rem;
+    flex-direction: column;
+  }
+
   .MuiTableCell-root {
     font-size: 12px;
     padding: 8px;
